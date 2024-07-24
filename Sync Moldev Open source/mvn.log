@@ -1,0 +1,1439 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 2286b025496086bfbaf001929ecf966817422291 at timestamp: 1713431976260
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources-jar) > generate-sources @ Sync_Windows >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources-jar) < generate-sources @ Sync_Windows <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (jacoco-site) @ Sync_Windows ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ Sync_Windows ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:integration-test (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:verify (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Sync_Windows ---
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\pom.xml to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT-sources.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:populate-app (populate-app) @ Sync_Windows ---
+[INFO] Property 'scijava.app.directory' unset; skipping populate-app.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.946 s
+[INFO] Finished at: 2024-04-18T11:19:38+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 2286b025496086bfbaf001929ecf966817422291 at timestamp: 1713432005104
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ Sync_Windows ---
+[INFO] Building jar: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources-jar) > generate-sources @ Sync_Windows >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources-jar) < generate-sources @ Sync_Windows <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (jacoco-site) @ Sync_Windows ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ Sync_Windows ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:integration-test (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:verify (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Sync_Windows ---
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\pom.xml to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT-sources.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:populate-app (populate-app) @ Sync_Windows ---
+[INFO] Property 'scijava.app.directory' unset; skipping populate-app.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.094 s
+[INFO] Finished at: 2024-04-18T11:20:07+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 2286b025496086bfbaf001929ecf966817422291 at timestamp: 1713432062388
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources-jar) > generate-sources @ Sync_Windows >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources-jar) < generate-sources @ Sync_Windows <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (jacoco-site) @ Sync_Windows ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ Sync_Windows ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:integration-test (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:verify (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Sync_Windows ---
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\pom.xml to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT-sources.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:populate-app (populate-app) @ Sync_Windows ---
+[INFO] Property 'scijava.app.directory' unset; skipping populate-app.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.038 s
+[INFO] Finished at: 2024-04-18T11:21:04+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 2286b025496086bfbaf001929ecf966817422291 at timestamp: 1713432135770
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ Sync_Windows ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] >>> maven-source-plugin:3.2.1:jar (attach-sources-jar) > generate-sources @ Sync_Windows >>>
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] <<< maven-source-plugin:3.2.1:jar (attach-sources-jar) < generate-sources @ Sync_Windows <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-source-plugin:3.2.1:jar (attach-sources-jar) @ Sync_Windows ---
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:report (jacoco-site) @ Sync_Windows ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.0:test-jar (default) @ Sync_Windows ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:integration-test (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.22.2:verify (default) @ Sync_Windows ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ Sync_Windows ---
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\pom.xml to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\loic.capdeville\Documents\GitHub\ImageJ_Plugins\Sync\target\Sync_Windows-0.1.0-SNAPSHOT-sources.jar to C:\Users\loic.capdeville\.m2\repository\com\mycompany\Sync_Windows\0.1.0-SNAPSHOT\Sync_Windows-0.1.0-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:populate-app (populate-app) @ Sync_Windows ---
+[INFO] Property 'scijava.app.directory' unset; skipping populate-app.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.989 s
+[INFO] Finished at: 2024-04-18T11:22:18+02:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713432547689
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.756 s
+[INFO] Finished at: 2024-04-18T11:29:08+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433016606
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.776 s
+[INFO] Finished at: 2024-04-18T11:36:57+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433142597
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.833 s
+[INFO] Finished at: 2024-04-18T11:39:03+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433630602
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.816 s
+[INFO] Finished at: 2024-04-18T11:47:11+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433803668
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.021 s
+[INFO] Finished at: 2024-04-18T11:50:04+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433851718
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.825 s
+[INFO] Finished at: 2024-04-18T11:50:53+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:Sync_Windows >---------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713433933357
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.775 s
+[INFO] Finished at: 2024-04-18T11:52:14+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:Sync_Windows_Plugin >------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows_Plugin ---
+[WARNING] Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[WARNING] ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xmlfailed to transfer from https://update.knime.com/analytics-platform/4.3 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of p2-knime-update-site has elapsed or updates are forced. Original error: Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows_Plugin ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713513418353
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows_Plugin ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows_Plugin ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows_Plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows_Plugin ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.806 s
+[INFO] Finished at: 2024-04-19T09:56:59+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows_Plugin: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:Sync_Windows_Plugin >------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows_Plugin ---
+[WARNING] Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[WARNING] ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xmlfailed to transfer from https://update.knime.com/analytics-platform/4.3 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of p2-knime-update-site has elapsed or updates are forced. Original error: Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows_Plugin ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713513499221
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows_Plugin ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows_Plugin ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows_Plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows_Plugin ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.022 s
+[INFO] Finished at: 2024-04-19T09:58:19+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows_Plugin: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:Sync_Windows_Plugin >------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0:enforce (enforce-rules) @ Sync_Windows_Plugin ---
+[WARNING] Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[INFO] Adding ignore: com.esotericsoftware.kryo.*
+[INFO] Adding ignore: com.esotericsoftware.minlog.*
+[INFO] Adding ignore: com.esotericsoftware.reflectasm.*
+[INFO] Adding ignore: com.google.inject.*
+[INFO] Adding ignore: jnr.ffi.*
+[INFO] Adding ignore: org.apache.hadoop.yarn.*.package-info
+[INFO] Adding ignore: org.apache.spark.unused.UnusedStubClass
+[INFO] Adding ignore: org.hibernate.stat.ConcurrentStatisticsImpl
+[INFO] Adding ignore: org.jetbrains.kotlin.daemon.common.*
+[INFO] Adding ignore: org.junit.runner.Runner
+[WARNING] jriengine:jriengine:jar:0.8.4 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=jriengine -DartifactId=jriengine -Dversion=0.8.4 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) ominer.client.task:ominer.client.task:jar:1.0.0
+	4) jriengine:jriengine:jar:0.8.4
+
+
+  jriengine:jriengine:jar:0.8.4
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[WARNING] de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0 was not found in https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced
+
+Try downloading the file manually from the project website.
+
+Then, install it using the command: 
+    mvn install:install-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file
+
+Alternatively, if you host your own repository you can deploy the file there: 
+    mvn deploy:deploy-file -DgroupId=de.biomedical-imaging.imagej -DartifactId=ij_ridge_detect -Dversion=1.4.0 -Dpackaging=jar -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+Path to dependency: 
+	1) com.mycompany:Sync_Windows_Plugin:jar:0.1.0-SNAPSHOT
+	2) ominer.knime.node.plugin:ominer.knime.node.plugin:jar:1.0.0-SNAPSHOT
+	3) de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+
+  de.biomedical-imaging.imagej:ij_ridge_detect:jar:1.4.0
+
+from the specified remote repositories:
+  central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: module-info
+[WARNING] ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xmlfailed to transfer from https://update.knime.com/analytics-platform/4.3 during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of p2-knime-update-site has elapsed or updates are forced. Original error: Could not transfer metadata ominer.knime.node:ominer.knime.node:1.0.0-SNAPSHOT/maven-metadata.xml from/to p2-knime-update-site (https://update.knime.com/analytics-platform/4.3): Cannot access https://update.knime.com/analytics-platform/4.3 with type p2 using the available connector factories: BasicRepositoryConnectorFactory
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (sanitize-version) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- build-helper-maven-plugin:3.2.0:regex-property (guess-package) @ Sync_Windows_Plugin ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.4:create (default) @ Sync_Windows_Plugin ---
+[INFO] Executing: cmd.exe /X /C "git rev-parse --verify HEAD"
+[INFO] Working directory: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] Storing buildNumber: 9dda21776dcbd6ee375e7a16421882311413e7e5 at timestamp: 1713513752086
+[INFO] Storing buildScmBranch: main
+[INFO] 
+[INFO] --- scijava-maven-plugin:2.1.0:set-rootdir (set-rootdir) @ Sync_Windows_Plugin ---
+[INFO] Setting rootdir: C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync
+[INFO] 
+[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (jacoco-initialize) @ Sync_Windows_Plugin ---
+[INFO] argLine set to -javaagent:C:\\Users\\loic.capdeville\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.7\\org.jacoco.agent-0.8.7-runtime.jar=destfile=C:\\Users\\loic.capdeville\\Documents\\GitHub\\TV\\ImageJ_Plugins\\Sync\\target\\jacoco.exec
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ Sync_Windows_Plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ Sync_Windows_Plugin ---
+[INFO] Compiling 1 source file to C:\Users\loic.capdeville\Documents\GitHub\TV\ImageJ_Plugins\Sync\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.817 s
+[INFO] Finished at: 2024-04-19T10:02:32+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project Sync_Windows_Plugin: Compilation failure
+[ERROR] No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:Sync_Windows_Plugin >------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.241 s
+[INFO] Finished at: 2024-04-19T10:10:44+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "build". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+== shit 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:Sync_Windows_Plugin >------------------
+[INFO] Building Sync Windows2 0.1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.259 s
+[INFO] Finished at: 2024-04-19T10:12:34+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "build". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+== shit 
+== shit 
+== shit 
+== shit 
+== shit 
+== shit 
+== shit 
