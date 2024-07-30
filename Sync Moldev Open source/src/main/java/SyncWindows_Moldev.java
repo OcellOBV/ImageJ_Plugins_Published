@@ -6,6 +6,6 @@ public class SyncWindows_Moldev extends PlugInFrame  {
 	}
 	@Override
 	public void run(String arg) {
-		new SyncWindowsPlugIn("ImageJPlugIn","regular");
+		new SyncWindowsPlugIn("ImageJPlugIn","moldev");
 	}
 }

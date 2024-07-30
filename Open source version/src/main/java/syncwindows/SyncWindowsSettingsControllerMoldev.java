@@ -178,7 +178,6 @@ public class SyncWindowsSettingsControllerMoldev extends SyncWindowsSettingsCont
 			filename = (String) comboBox.getSelectedItem();
 		}
 		
-		
 		if  (view.isSettingsControllerEnabled()) {
 			model.getMoldevPath(get_i()).setFilename(filename);
 			if (get_i() == 0) {

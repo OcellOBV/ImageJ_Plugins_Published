@@ -1,5 +1,7 @@
 package syncwindows;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
@@ -72,16 +74,12 @@ public class SyncWindowsPathController implements Runnable {
 		}
 		System.out.println("createSyncStackWindow for i="+i);
 
-		// somehow it doesnt work to remove the image listener, therefore the function below has been created as a work-around
-		//view.removeImageListener(imageController);
 		view.setImageListenerEnabled(false);
 		
-		//I think we can do something about memory right there. Or in the SyncWindowsView.setSyncStackWindow
 		System.out.println("memory left = " + IJ.freeMemory());
 		IJ.log(IJ.freeMemory());
 		
 		syncStackWindow = createSyncStackWindow(syncStackWindow, filename);
-		//view.registerImageListener(imageController);
 
 		if (Thread.currentThread().isInterrupted()) {
 			view.setImageListenerEnabled(true);
@@ -114,7 +112,7 @@ public class SyncWindowsPathController implements Runnable {
 	protected  synchronized SyncStackWindow createSyncStackWindow(SyncStackWindow syncStackWindow, String filename) {
 		closeSyncStackWindow(syncStackWindow, filename);
 		IJ.log("openImage("+filename+")");
-		ImagePlus imp = IJ.openImage(filename); // this one slows down the opening images from server!
+		ImagePlus imp = IJ.openImage(filename);
 		imp.setTitle(get_i() + " : " + imp.getTitle());
 		syncStackWindow = new SyncStackWindow(imp);
 		System.out.println("new SyncStackWindow "+imp.getShortTitle()+" created (order 1)");
@@ -122,6 +120,17 @@ public class SyncWindowsPathController implements Runnable {
 		syncStackWindow.registerMouseListener(mouseController);
 		syncStackWindow.registerMouseMotionListener(motionController);
 		syncStackWindow.setBackgroundState(BackgroundStates.NORMAL);
+		
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		
+		//syncStackWindow.setSize((int) Math.round(screenSize.height), (int) Math.round(screenSize.height));
+		
+		syncStackWindow.zoomOut(syncStackWindow.getLocation());
+		
+		view.syncProperties();
+		
+
+		
 		return syncStackWindow;
 	}
 

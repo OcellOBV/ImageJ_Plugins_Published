@@ -16,34 +16,41 @@
 	<version>0.1.0-SNAPSHOT</version>
 
 	<name>SyncWindows_V2</name>                                                   <!-- FIXME: Your project name here -->
-	<description>A Maven project implementing an ImageJ 1.x plugin.</description> <!-- FIXME: Your project description here -->
-	<url>https://mycompany.com/imagej/</url>                       <!-- FIXME: Your project website here -->
-	<inceptionYear>2012</inceptionYear>                                           <!-- FIXME: Your project starting year here -->
+	<description>A Maven project implementing an ImageJ synchronized images plugin plugin. </description> <!-- FIXME: Your project description here -->
+	<url>https://github.com/OcellOBV/ImageJ_Plugins_Published</url>                       <!-- FIXME: Your project website here -->
+	<inceptionYear>2023</inceptionYear>                                           <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>My Company</name>           <!-- FIXME: Your organization name here -->
-		<url>https://mycompany.com/</url> <!-- FIXME: Your organization website here -->
+		<name>Crown BioScience</name>           <!-- FIXME: Your organization name here -->
+		<url>https://www.crownbio.com/</url> <!-- FIXME: Your organization website here -->
 	</organization>
-	<licenses>
-		<license>                         <!-- FIXME: Your license here -->
-			<name>CC0</name>
-			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
 	<developers>
-		<!-- See https://imagej.net/contribute/governance#scijava-team-roles -->
 		<developer>
-			<id>octocat</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Noma Onomatopoeia</name>                            <!-- FIXME: Your name here -->
-			<url>https://mycompany.com/people/noma-onomatopoeia</url> <!-- FIXME: Your website here -->
+			<id>LoicCap</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Loïc Capdeville</name>                            <!-- FIXME: Your name here -->
+			<roles>
+				<role>developer</role>
+				<role>debugger</role>
+			</roles>
+		</developer>
+		<developer>
+			<id>LoisOcello</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Lois Van der Drift</name>                            <!-- FIXME: Your name here -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
 				<role>developer</role>
-				<role>debugger</role>
 				<role>reviewer</role>
-				<role>support</role>
-				<role>maintainer</role>
+			</roles>
+		</developer>
+		<!-- See https://imagej.net/contribute/governance#scijava-team-roles -->
+		<developer>
+			<id>ashgard071</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Ashgard Weterings</name>                            <!-- FIXME: Your name here -->
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+				<role>reviewer</role>
 			</roles>
 		</developer>
 	</developers>
@@ -52,6 +59,13 @@
 			<name>None</name>
 		</contributor>
 	</contributors>
+	<licenses>
+		<license>                         <!-- FIXME: Your license here -->
+			<name>CC0</name>
+			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 	<mailingLists>
 		<mailingList>
 			<name>Image.sc Forum</name>
@@ -60,24 +74,24 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/imagej/example-legacy-plugin</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-legacy-plugin</developerConnection>
+		<connection>scm:git:https://github.com/OcellOBV/ImageJ_Plugins_Published</connection>
+		<developerConnection>scm:git:git@github.com/OcellOBV/ImageJ_Plugins_Published</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/example-legacy-plugin</url>
+		<url>https://github.com/OcellOBV/ImageJ_Plugins_Published</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/example-legacy-plugin/issues</url>
+		<url>https://github.com/OcellOBV/ImageJ_Plugins_Published/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>main.java</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>main.java.Sync_WindowsV2</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<package-name>main.java</package-name>
+		<main-class>main.java.SyncWindows_V2</main-class>
 		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
+		<license.copyrightOwners>Crown BioScience Netherland</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
 
 	<dependencies>

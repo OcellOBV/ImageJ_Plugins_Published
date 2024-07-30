@@ -18,8 +18,6 @@ public class SyncWindowsPlugIn extends PlugInFrame  {
 		initialize(name, pathSystem);
 	}
 	
-	// TODO when close a window, remove it from the list, now it throws an error.
-	
 	protected void initialize(String name, String pathSystem) {
 		SyncWindowsModelIF model = new SyncWindowsModel(pathSystem);
 		
@@ -69,7 +67,6 @@ public class SyncWindowsPlugIn extends PlugInFrame  {
 		imageJ.addWindowListener(this);
 	}
 
-	// TODO how does this work?
 	public static void main(String[] args) throws Exception {
 		// set the plugins.dir property to make the plugin appear in the Plugins menu
 		// see: https://stackoverflow.com/a/7060464/1207769
