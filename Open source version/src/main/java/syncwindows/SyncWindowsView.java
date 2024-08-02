@@ -115,7 +115,7 @@ public class SyncWindowsView implements SyncWindowsViewIF {
 			if (syncWindow == null) continue;
 			final int taskBarHeight = 100;
 			int max_y = screenHeight - syncWindow.getHeight() - taskBarHeight; 
-			//settingsViewHeight = Math.min(settingsViewHeight, max_y);
+			settingsViewHeight = Math.min(settingsViewHeight, max_y);
 			syncWindow.setLocation(x, settingsViewHeight);
 			x += Math.min(syncWindow.getWidth(), max_x);
 		}

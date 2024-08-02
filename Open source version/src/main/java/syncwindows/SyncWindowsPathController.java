@@ -121,15 +121,9 @@ public class SyncWindowsPathController implements Runnable {
 		syncStackWindow.registerMouseMotionListener(motionController);
 		syncStackWindow.setBackgroundState(BackgroundStates.NORMAL);
 		
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		
-		//syncStackWindow.setSize((int) Math.round(screenSize.height), (int) Math.round(screenSize.height));
-		
-		syncStackWindow.zoomOut(syncStackWindow.getLocation());
-		
-		view.syncProperties();
-		
-
+		while (syncStackWindow.getMagnification() > 0.8) {
+			syncStackWindow.zoomOut(syncStackWindow.getLocation());
+		}
 		
 		return syncStackWindow;
 	}
@@ -152,10 +146,6 @@ public class SyncWindowsPathController implements Runnable {
 				syncStackWindow.removeKeyListener(keyController);
 				syncStackWindow.removeMouseListener(mouseController);
 				syncStackWindow.removeMouseMotionListener(motionController);
-				if (syncStackWindow.isShowing() && syncStackWindow.getTitle()!=filename) {
-					syncStackWindow.close();
-				}
-		
 			}
 		}
 		catch (Exception e) {

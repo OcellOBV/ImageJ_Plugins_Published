@@ -365,7 +365,7 @@ public abstract class SyncWindowsSettingsMenuController extends KeyAdapter imple
 	
 	protected String getAutoSavingPath() {
 	    String userHome = System.getProperty("user.home");
-	    return userHome + File.separator + ".imagj" + File.separator + "SyncWindows" + File.separator;
+	    return userHome + File.separator + ".imagej" + File.separator + "SyncWindows" + File.separator;
 	}
 
 	private static void createEmptyZipFile(String filePath) {

@@ -97,6 +97,11 @@ public class SyncStackWindow extends StackWindow {
 	public boolean equal(ImageWindow w) {
 		return imp == w.getCanvas().getImage();
 	}
+	
+	public double getMagnification() {
+		return ic.getMagnification();
+	}
+	
 
 	public void zoomIn(Point loc) {
 		ic.zoomIn(loc.x, loc.y);
