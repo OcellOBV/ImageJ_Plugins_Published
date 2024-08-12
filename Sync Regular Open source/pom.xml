@@ -16,7 +16,14 @@
 	<version>0.1.0-SNAPSHOT</version>
 
 	<name>SyncWindows_V2</name>                                                   <!-- FIXME: Your project name here -->
-	<description>A Maven project implementing an ImageJ synchronized images plugin plugin. </description> <!-- FIXME: Your project description here -->
+	<description>Makes image browsing and comparison more efficient:
+                                  - Multiple synchronized images
+                                  - Switch between images easily
+                                  - Compare images using overlays
+                                  - Automatically saves your view and comments.
+                                  - Export and import your view to share it with your team
+Start by copying the path of your folder into the root boxes.
+    </description> <!-- FIXME: Your project description here -->
 	<url>https://github.com/OcellOBV/ImageJ_Plugins_Published</url>                       <!-- FIXME: Your project website here -->
 	<inceptionYear>2023</inceptionYear>                                           <!-- FIXME: Your project starting year here -->
 	<organization>

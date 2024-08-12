@@ -30,7 +30,8 @@ public interface SyncWindowsViewIF {
 	public void performComputations();
 	
 	public int getLineToDelete(ImagePlus imp);
-	public void setImageListenerEnabled(boolean value);
-	public boolean isImageListenerEnabled();
+	public boolean isImageListenerEnabled(int i);
+	public void setImageListenerEnabled(int i, boolean value);
+    public void setAllImageListenerEnabled(boolean value);
 	
 }

@@ -66,7 +66,7 @@ public class SyncWindowsPathController implements Runnable {
 				return;
 			}
 		}
-		
+
 
 		if (Thread.currentThread().isInterrupted()) {
 			System.out.println("Interrupted before opening image");
@@ -74,20 +74,20 @@ public class SyncWindowsPathController implements Runnable {
 		}
 		System.out.println("createSyncStackWindow for i="+i);
 
-		view.setImageListenerEnabled(false);
-		
+		view.setImageListenerEnabled(i,false);
+
 		System.out.println("memory left = " + IJ.freeMemory());
 		IJ.log(IJ.freeMemory());
-		
+
 		syncStackWindow = createSyncStackWindow(syncStackWindow, filename);
 
 		if (Thread.currentThread().isInterrupted()) {
-			view.setImageListenerEnabled(true);
+			view.setImageListenerEnabled(i,true);
 			System.out.println("Interrupted after opening image");
 			return;
 		}
 		if (syncStackWindow == null) {
-			view.setImageListenerEnabled(true);
+			view.setImageListenerEnabled(i,true);
 			System.out.println("syncStackWindow == null");
 			return;
 		}
@@ -95,7 +95,7 @@ public class SyncWindowsPathController implements Runnable {
 		view.setSyncStackWindow(i, syncStackWindow);
 		IJ.freeMemory();
 		view.syncProperties();
-		view.setImageListenerEnabled(true);
+		view.setImageListenerEnabled(i,true);
 	}
 
 	private boolean isSameFilename(String filename, SyncStackWindow syncStackWindow) {
@@ -120,11 +120,11 @@ public class SyncWindowsPathController implements Runnable {
 		syncStackWindow.registerMouseListener(mouseController);
 		syncStackWindow.registerMouseMotionListener(motionController);
 		syncStackWindow.setBackgroundState(BackgroundStates.NORMAL);
-		
+
 		while (syncStackWindow.getMagnification() > 0.8) {
 			syncStackWindow.zoomOut(syncStackWindow.getLocation());
 		}
-		
+
 		return syncStackWindow;
 	}
 
@@ -146,10 +146,13 @@ public class SyncWindowsPathController implements Runnable {
 				syncStackWindow.removeKeyListener(keyController);
 				syncStackWindow.removeMouseListener(mouseController);
 				syncStackWindow.removeMouseMotionListener(motionController);
+				if (syncStackWindow.isShowing() && syncStackWindow.getTitle()!=filename) {
+					syncStackWindow.close();
+				}
 			}
 		}
 		catch (Exception e) {
 			IJ.log("Problem closing the image");
-}
+		}
 	}
 }

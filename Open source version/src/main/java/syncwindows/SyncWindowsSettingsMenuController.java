@@ -132,52 +132,52 @@ public abstract class SyncWindowsSettingsMenuController extends KeyAdapter imple
 	}
 	
 	private void showHelp() {
-	    String imagePath = "/Crown-Bioscience-Logo-TEAL.png";
-	    URL imageUrl = getClass().getResource(imagePath);
-	    
-	    ImageIcon imageIcon = null;
-	    if (imageUrl != null) {
-	        imageIcon = new ImageIcon(imageUrl);
-	    } else {
-	        System.err.println("Image not found at " + imagePath);
-	        return;
-	    }
+		String imagePath = "/Crown-Bioscience-Logo-TEAL.png";
+		URL imageUrl = getClass().getResource(imagePath);
 
-	    JFrame helpFrame = new JFrame("Help");
-	    
-	    int imageWidth = imageIcon.getIconWidth();
-	    int imageHeight = imageIcon.getIconHeight();
-	    
-	    helpFrame.setSize(imageWidth, imageHeight + 300);
+		ImageIcon imageIcon = null;
+		if (imageUrl != null) {
+			imageIcon = new ImageIcon(imageUrl);
+		} else {
+			System.err.println("Image not found at " + imagePath);
+			return;
+		}
 
-	    StringBuilder helpContent = new StringBuilder();
-	    helpContent.append("Developed by CrownBioScience Netherlands\n\n")
-	               .append("AUTHORS:\n\n")
-	               .append("Ashgard Weterings\n")
-	               .append("Lois Van der Drift\n")
-	               .append("Loïc Capdeville\n")
-	               .append("\n\nDESCRIPTION:\n\n")
-	               .append("- Open multiple synchronized images\n")
-	               .append("- Switch between images\n")
-	               .append("- Use overlays to compare images\n")
-	               .append("- Share your point of view using the import/export feature\n");
-	    
-	    	
-	    JTextArea helpText = new JTextArea();
-	    helpText.setText(helpContent.toString());
-	    helpText.setEditable(false);
+		JFrame helpFrame = new JFrame("Help");
 
-	    JPanel helpPanel = new JPanel();
-	    helpPanel.setLayout(new BorderLayout());
+		int imageWidth = imageIcon.getIconWidth();
+		int imageHeight = imageIcon.getIconHeight();
 
-	    JLabel imageLabel = new JLabel(imageIcon);
-	    helpPanel.add(imageLabel, BorderLayout.NORTH);
-	    helpPanel.add(new JScrollPane(helpText), BorderLayout.CENTER);
+		helpFrame.setSize(imageWidth, imageHeight + 325);
 
-	    helpFrame.add(helpPanel);
-	    helpFrame.setVisible(true);
+		StringBuilder helpContent = new StringBuilder();
+		helpContent.append("Developed by CrownBioScience Netherlands\n\n")
+		.append("AUTHORS:\n\n")
+		.append("Ashgard Weterings\n")
+		.append("Lois Van der Drift\n")
+		.append("Loïc Capdeville\n")
+		.append("\n\nDESCRIPTION:\n\n")
+		.append("- Open multiple synchronized images\n")
+		.append("- Switch between images\n")
+		.append("- Use overlays to compare images\n")
+		.append("- Share your point of view using the import/export feature\n\n")
+		.append("Version : 1.0\n");
+
+
+		JTextArea helpText = new JTextArea();
+		helpText.setText(helpContent.toString());
+		helpText.setEditable(false);
+
+		JPanel helpPanel = new JPanel();
+		helpPanel.setLayout(new BorderLayout());
+
+		JLabel imageLabel = new JLabel(imageIcon);
+		helpPanel.add(imageLabel, BorderLayout.NORTH);
+		helpPanel.add(new JScrollPane(helpText), BorderLayout.CENTER);
+
+		helpFrame.add(helpPanel);
+		helpFrame.setVisible(true);
 	}
-
 
 
 

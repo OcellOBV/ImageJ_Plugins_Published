@@ -28,14 +28,34 @@ public class SyncWindowsImageController implements ImageListener {
 		if (currentSlice == model.getCurrentSlice()) return false;
 		return true;
 	}
-	
+
 	@Override
 	public void imageUpdated(ImagePlus imp) {
-		if (!view.isImageListenerEnabled()) return;
-		if (!isUpdated(imp)) return;
-		System.out.println("imageUpdated"); // TODO this happens too much I think?
-		view.setSlice(imp);
-		view.setCursorOnImps();
+	    int i = 0;
+	    String title = "";
+	    try {
+		    title = imp.getCanvas().getImage().getTitle();
+	    }
+	    catch (Exception e){
+	    	System.out.println("No title");
+	    }
+
+	    
+	    if (title != null && !title.isEmpty()) {
+	        try {
+	            i = Integer.parseInt(title.substring(0, 1));
+	        } catch (NumberFormatException | IndexOutOfBoundsException e) {
+	            System.err.println("Error converting the first character of the title to an integer: " + e.getMessage());
+	            i = -1;
+	        }
+	    }
+	    
+	    if (i == -1 || !view.isImageListenerEnabled(i)) return;
+	    if (!isUpdated(imp)) return;
+	    
+	    System.out.println("imageUpdated");
+	    view.setSlice(imp);
+	    view.setCursorOnImps();
 	}
 
 	/**
@@ -43,9 +63,10 @@ public class SyncWindowsImageController implements ImageListener {
 	 */
 	@Override
 	public void imageClosed(ImagePlus imp) {
-	if (!view.isImageListenerEnabled()) return;
 		int i = view.getLineToDelete(imp);
+		if (!view.isImageListenerEnabled(i)) return;
 		if (i == -1) return;
+		
 		PathModel emptyPath = null;
 		if (model.getPath(i) instanceof MoldevPathModel) {
 			emptyPath = new MoldevEmptyPath();

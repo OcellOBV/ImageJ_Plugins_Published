@@ -7,6 +7,8 @@ import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.event.KeyListener;
 import java.awt.geom.GeneralPath;
+import java.util.HashMap;
+import java.util.Map;
 
 import ij.IJ;
 import ij.ImageJ;
@@ -19,12 +21,13 @@ import ij.gui.Roi;
 import ij.gui.ShapeRoi;
 import ij.plugin.frame.RoiManager;
 
+
 public class SyncWindowsView implements SyncWindowsViewIF {
 
 	protected SyncWindowsModelIF model;
 
 	private int overlayWindow = -1;
-	private boolean enableImageListener = true;
+	private Map<Integer, Boolean> enableImageListenerMap = new HashMap<>();
 
 	protected SyncStackWindow[] syncStackWindows;
 	protected RoiManager roiManager;
@@ -33,10 +36,13 @@ public class SyncWindowsView implements SyncWindowsViewIF {
 	final private Color cursorColor = Color.red;
 
 	public SyncWindowsView(SyncWindowsModelIF model) {
+        enableImageListenerMap = new HashMap<>(SyncWindowsConstants.N);
+        for (int i = 0; i < SyncWindowsConstants.N; i++) {
+            enableImageListenerMap.put(i, true);
+        }
 		this.model = model;
 		initializeWindows();
 	}
-
 	private void initializeWindows() {
 		syncStackWindows = new SyncStackWindow[SyncWindowsConstants.N];
 		for (int i = 0; i<SyncWindowsConstants.N; i++)
@@ -372,13 +378,18 @@ public class SyncWindowsView implements SyncWindowsViewIF {
 	}
 
 	@Override
-	public void setImageListenerEnabled(boolean value) {
-		enableImageListener = value;
-	}
+    public void setImageListenerEnabled(int i, boolean value) {
+        enableImageListenerMap.put(i, value);
+    }
 
-	@Override
-	public boolean isImageListenerEnabled() {
-		return enableImageListener;
-	}
+    public boolean isImageListenerEnabled(int i) {
+        return enableImageListenerMap.getOrDefault(i, false);
+    }
+    
+    public void setAllImageListenerEnabled(boolean value) {
+        for (Map.Entry<Integer, Boolean> entry : enableImageListenerMap.entrySet()) {
+            entry.setValue(value);
+        }
+    }
 
 }

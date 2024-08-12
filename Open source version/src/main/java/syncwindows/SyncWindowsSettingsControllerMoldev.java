@@ -182,7 +182,7 @@ public class SyncWindowsSettingsControllerMoldev extends SyncWindowsSettingsCont
 			model.getMoldevPath(get_i()).setFilename(filename);
 			if (get_i() == 0) {
 				for (int i = 1; i<SyncWindowsConstants.N; i++) {
-					if (!(model.getMoldevPath(i) instanceof MoldevEmptyPath)){ 
+					if (!(model.getMoldevPath(i) instanceof MoldevEmptyPath)){
 						view.setComboBoxModelWithMemory(view.getSettingsPanelMoldev().getPlateComboBox(i), model.getMoldevPath(i).getPlates(), model.getMoldevPath(i).getPlate());
 					}
 				}

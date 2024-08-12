@@ -32,7 +32,7 @@ public class SyncWindowsWindowController implements WindowListener{
 		menuListener.actionPerformed(autoSave);
 		if (!name.equals("ImageJPlugIn")){
 			try {
-				view.setImageListenerEnabled(false);	
+				view.setAllImageListenerEnabled(false);	
 				String[] imagesTitles = ij.WindowManager.getImageTitles();
 				String[] nonImagesTitles = ij.WindowManager.getNonImageTitles();
 
@@ -49,7 +49,7 @@ public class SyncWindowsWindowController implements WindowListener{
 					}
 				}
 				IJ.run("Quit");
-				view.setImageListenerEnabled(true);	
+				view.setAllImageListenerEnabled(true);	
 			}
 			catch (Exception f) {
 				IJ.log("Problem closing all");
